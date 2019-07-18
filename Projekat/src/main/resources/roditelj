@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.azra.Roditelj"
+           table="roditelj">
+        <id name="id_roditelj"
+            type="int"
+            column="id_roditelj">
+            <generator class="assigned"/>
+        </id>
+        <property name="ime_r"
+                  column="ime_r"
+                  type="string"/>
+        <property name="prezime_r"
+                  column="prezime_r"
+                  type="string"/>
+        <property name="kontakt_r"
+                  column="kontakt_r"
+                  type="int"/>
+    </class>
+
+</hibernate-mapping>

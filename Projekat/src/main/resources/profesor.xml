@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+    <class name="com.azra.Profesor"
+           table="profesor">
+        <id name="id_profesor"
+            type="int"
+            column="id_profesor">
+            <generator class="assigned"/>
+        </id>
+            <property name="ime_p"
+                      column="ime_p"
+                      type="string"/>
+            <property name="prezime_p"
+                      column="prezime_p"
+                      type="string"/>
+            <property name="kontakt_p"
+                      column="kontakt_p"
+                      type="int"/>
+
+        <set name="personPhoneNumbers" table="razred" cascade="all"
+             inverse="true">
+            <key column="PERSONID" not-null="true" />
+            <one-to-many class="" />
+        </set>
+
+
+
+
+    </class>
+
+</hibernate-mapping>

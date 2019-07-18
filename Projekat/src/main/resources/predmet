@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.azra.Predmet"
+           table="predmet">
+        <id name="id_predmet"
+            type="int"
+            column="id_predmet">
+            <generator class="assigned"/>
+        </id>
+        <property name="naziv"
+                  column="naziv"
+                  type="string"/>
+        <property name="br_sati"
+                  column="br_sati"
+                  type="int"/>
+    </class>
+
+</hibernate-mapping>

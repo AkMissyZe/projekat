@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.azra.Ucenik"
+           table="ucenik">
+        <id name="id_ucenik"
+            type="int"
+            column="id_ucenik">
+            <generator class="assigned"/>
+        </id>
+        <property name="ime_u"
+                  column="ime_u"
+                  type="string"/>
+        <property name="prezime_u"
+                  column="prezime_u"
+                  type="string"/>
+        <property name="datum_rodjenja"
+                  column="datum_rodjenja"
+                  type="date"/>
+        <property name="mjesto_rodjenja"
+                  column="mjesto_rodjenja"
+                  type="string"/>
+    </class>
+
+</hibernate-mapping>

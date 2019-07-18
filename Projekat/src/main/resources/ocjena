@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.azra.Ocjena"
+           table="ocjena">
+        <id name="id_ocjena"
+            type="int"
+            column="id_ocjena">
+            <generator class="assigned"/>
+        </id>
+        <property name="datum"
+                  column="datum"
+                  type="date"/>
+        <property name="ocjena"
+                  column="ocjena"
+                  type="int"/>
+    </class>
+
+</hibernate-mapping>

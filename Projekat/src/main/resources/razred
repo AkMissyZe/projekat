@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="com.azra.Razred"
+           table="razred">
+        <id name="id_razred"
+            type="int"
+            column="id_razred">
+            <generator class="assigned"/>
+        </id>
+        <property name="razred"
+                  column="razred"
+                  type="int"/>
+        <property name="odjeljenje"
+                  column="odjeljenje"
+                  type="int"/>
+    </class>
+
+</hibernate-mapping>
